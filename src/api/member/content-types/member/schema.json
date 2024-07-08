@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "singularName": "member",
+    "pluralName": "members",
+    "displayName": "member",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 30,
+      "minLength": 3
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true,
+      "maxLength": 30,
+      "minLength": 6
+    },
+    "password": {
+      "type": "password",
+      "required": true,
+      "maxLength": 20,
+      "minLength": 6,
+      "private": true
+    }
+  }
+}
